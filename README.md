@@ -118,6 +118,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Author
 
 **Lokesh Pawar**
-- [GitHub](https://github.com/your-username)
+- [GitHub](https://github.com/lokes1pawar)
 - [Email](mailto:lokesh1pawar@gmail.com)
 
