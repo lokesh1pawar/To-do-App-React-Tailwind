@@ -14,7 +14,7 @@ This is a beautifully designed dynamic to-do list application built with **React
 ## Demo
 
 Todo App Demo
-
+<img width="1026" alt="Screenshot 2025-01-15 at 4 15 36 PM" src="https://github.com/user-attachments/assets/895f7941-62a0-48e1-b1ea-4294a2141663" />
 
 
 ## Installation
@@ -89,10 +89,10 @@ src/
 ## Screenshots
 
 ### Main Interface
-![Main Interface](https://via.placeholder.com/800x400.png?text=Main+Interface)
+Main Interface
 
 ### Add and Manage Tasks
-![Add and Manage Tasks](https://via.placeholder.com/800x400.png?text=Add+and+Manage+Tasks)
+Add and Manage Tasks
 
 ## Contributing
 
