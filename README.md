@@ -1,70 +1,123 @@
-# Getting Started with Create React App
+# Dynamic To-Do List Application 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a beautifully designed dynamic to-do list application built with **React** and styled using **Tailwind CSS**. It allows users to manage their tasks efficiently with features like adding, completing, deleting, and filtering tasks. The application also persists data in local storage to ensure tasks are retained after a page refresh.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Add New Tasks**: Quickly add new tasks using a simple input field.
+- **Mark Tasks as Complete**: Toggle task completion by clicking on the task.
+- **Delete Tasks**: Remove tasks that are no longer needed.
+- **Filter Tasks**: View tasks by categories - All, Completed, or Pending.
+- **Data Persistence**: Tasks are saved in local storage to survive page refreshes.
+- **Responsive Design**: A clean, responsive UI styled with Tailwind CSS.
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Todo App Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/todo-app.git
+   cd todo-app
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Open the app in your browser at [http://localhost:3000](http://localhost:3000).
 
-### `npm run eject`
+## Components
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 1. `TodoApp`
+The main component that manages the state and handles logic for adding, updating, and filtering tasks.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2. `AddTodo`
+A form component for adding new tasks to the list.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 3. `Filter`
+Provides buttons to filter tasks by All, Completed, or Pending.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 4. `TodoList`
+Renders the list of tasks based on the current filter.
 
-## Learn More
+### 5. `TodoItem`
+Displays individual tasks with options to toggle completion or delete them.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## API Integration
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The app fetches initial tasks from the following API:
+[https://dummyjson.com/todos](https://dummyjson.com/todos)
 
-### Code Splitting
+Tasks are mapped to the following structure:
+```json
+{
+  "id": 1,
+  "text": "Sample task",
+  "completed": false
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Technologies Used
 
-### Analyzing the Bundle Size
+- **React**: For building the user interface.
+- **Tailwind CSS**: For styling the application.
+- **Local Storage**: To persist tasks between sessions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## File Structure
+```
+src/
+├── components/
+│   ├── AddTodo.js
+│   ├── Filter.js
+│   ├── TodoList.js
+│   └── TodoItem.js
+├── App.js
+└── index.js
+```
 
-### Making a Progressive Web App
+## Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Main Interface
+![Main Interface](https://via.placeholder.com/800x400.png?text=Main+Interface)
 
-### Advanced Configuration
+### Add and Manage Tasks
+![Add and Manage Tasks](https://via.placeholder.com/800x400.png?text=Add+and+Manage+Tasks)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contributing
 
-### Deployment
+1. Fork the repository.
+2. Create a new branch for your feature:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add new feature"
+   ```
+4. Push the branch:
+   ```bash
+   git push origin feature-name
+   ```
+5. Open a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+
+**Lokesh Pawar**
+- [GitHub](https://github.com/your-username)
+- [Email](mailto:lokesh1pawar@gmail.com)
+
